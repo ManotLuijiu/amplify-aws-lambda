@@ -1,0 +1,179 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "mbapp-20180923131910-authRole",
+			"UnauthRoleArn": "arn:aws:iam::340545016932:role/mbapp-20180923131910-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::340545016932:role/mbapp-20180923131910-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "mbapp-20180923131910-deployment",
+			"UnauthRoleName": "mbapp-20180923131910-unauthRole",
+			"StackName": "mbapp-20180923131910",
+			"StackId": "arn:aws:cloudformation:us-east-1:340545016932:stack/mbapp-20180923131910/98e65980-bef8-11e8-b8cc-503aca4a58d1"
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/mbapp-20180923131910-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2018-09-23T08:18:29.902Z",
+			"output": {
+				"S3BucketSecureURL": "https://mbapp-20180923132022--hostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://mbapp-20180923132022--hostingbucket.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "mbapp-20180923132022--hostingbucket"
+			},
+			"lastPushDirHash": "XocQE6moMpQha2jmwXMNzYPMth8="
+		}
+	},
+	"auth": {
+		"cognito933ba07d": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/mbapp-20180923131910-deployment/amplify-cfn-templates/auth/cognito933ba07d-cloudformation-template.yml",
+				"logicalId": "authcognito933ba07d"
+			},
+			"lastPushTimeStamp": "2018-09-23T08:18:29.904Z",
+			"output": {
+				"AppClientSecret": "kf42us5r9hk76kj22dbhnsvd3rk64lpocpb11d5ioeefujen6cq",
+				"UserPoolId": "us-east-1_ot86UPEUI",
+				"AppClientIDWeb": "12q15fsop8pqqnfijut8v7ucdf",
+				"AppClientID": "6fpe9192r001qqmkvdskb5nmtc",
+				"IdentityPoolId": "us-east-1:7753fb15-0c99-4a5a-baa2-ac84dbf706cb",
+				"IdentityPoolName": "cognito933ba07d_identitypool_933ba07d",
+				"UserPoolName": "cognito933ba07d_userpool_933ba07d"
+			},
+			"lastPushDirHash": "KbCtcWwFoi55awZwUSRQHHWb/M8="
+		}
+	},
+	"analytics": {
+		"mbapp": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/mbapp-20180923131910-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+				"logicalId": "analyticsmbapp"
+			},
+			"lastPushTimeStamp": "2018-09-23T08:18:29.911Z",
+			"output": {
+				"appName": "mbapp",
+				"Region": "us-east-1",
+				"Id": "2b34c4c3cd8a45d4b02337d3a8c98766"
+			},
+			"lastPushDirHash": "9T9FRzPCOvGbErBpAXPi3iCwdA8="
+		}
+	},
+	"storage": {
+		"mbappstorage": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/mbapp-20180923131910-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storagembappstorage"
+			},
+			"lastPushTimeStamp": "2018-09-23T08:18:29.919Z",
+			"output": {
+				"BucketName": "mbappf0e8f67547ee4b7eb97100b062bba1f2",
+				"Region": "us-east-1"
+			},
+			"lastPushDirHash": "LEkKOj2GwiAVg7WGuuGF+2USy38="
+		},
+		"dynamombapprestapi": {
+			"service": "DynamoDB",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/mbapp-20180923131910-deployment/amplify-cfn-templates/storage/dynamombapprestapi-cloudformation-template.json",
+				"logicalId": "storagedynamombapprestapi"
+			},
+			"lastPushTimeStamp": "2018-09-23T08:18:29.943Z",
+			"output": {
+				"PartitionKeyName": "id",
+				"Region": "us-east-1",
+				"Arn": "arn:aws:dynamodb:us-east-1:340545016932:table/dynamombapprestapi",
+				"PartitionKeyType": "S",
+				"Name": "dynamombapprestapi"
+			},
+			"lastPushDirHash": "cJrt4DY0HAUl53zdH3aSt9Frhnw="
+		}
+	},
+	"api": {
+		"mbappgraphql": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "xeuox5n4jba2raavc3l3umycoq",
+				"GraphQLAPIEndpointOutput": "https://ximcm6el55gxpcha7mvwshawna.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-cio4oqzbsje77mwyw3lvuind5i",
+				"AuthCognitoUserPoolIdOutput": "us-east-1_ot86UPEUI",
+				"AuthCognitoUserPoolNativeClientId": "See UserPool: us-east-1_ot86UPEUI",
+				"AuthCognitoUserPoolJSClientId": "See UserPool: us-east-1_ot86UPEUI"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/mbapp-20180923131910-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apimbappgraphql"
+			},
+			"lastPushTimeStamp": "2018-09-23T08:18:29.933Z",
+			"lastPushDirHash": "LD9Dh2k40UFHVpqWu+paN8pn/DY="
+		},
+		"mbapprest": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "mbapprestapi",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/mbapp-20180923131910-deployment/amplify-cfn-templates/api/mbapprest-cloudformation-template.json",
+				"logicalId": "apimbapprest"
+			},
+			"lastPushTimeStamp": "2018-09-23T08:18:29.943Z",
+			"output": {
+				"ApiName": "mbapprest",
+				"RootUrl": "https://trmulf0cv8.execute-api.us-east-1.amazonaws.com/Prod"
+			},
+			"lastPushDirHash": "VlfbgdEP+U4pf/dnlyVU3woJqz0="
+		}
+	},
+	"function": {
+		"mbapprestapi": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "storage",
+					"resourceName": "dynamombapprestapi",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"lastBuildTimeStamp": "2018-09-23T08:15:48.661Z",
+			"lastPackageTimeStamp": "2018-09-23T08:16:01.551Z",
+			"distZipFilename": "mbapprestapi-1537690548-latest-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/mbapp-20180923131910-deployment/amplify-cfn-templates/function/mbapprestapi-cloudformation-template.json",
+				"logicalId": "functionmbapprestapi"
+			},
+			"lastPushTimeStamp": "2018-09-23T08:18:29.943Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:340545016932:function:mbapprestapi",
+				"Name": "mbapprestapi"
+			},
+			"lastPushDirHash": "kiY3S0lFYMeIHMCLUjf3LCVDh7k="
+		}
+	}
+}

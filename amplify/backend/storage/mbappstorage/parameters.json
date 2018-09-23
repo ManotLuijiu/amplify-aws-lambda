@@ -1,0 +1,9 @@
+{
+    "bucketName": "mbappf0e8f67547ee4b7eb97100b062bba1f2",
+    "authPolicyName": "s3_amplify_10d36a58",
+    "unauthPolicyName": "s3_amplify_10d36a58",
+    "authRoleName": "mbapp-20180923131910-authRole",
+    "unauthRoleName": "mbapp-20180923131910-unauthRole",
+    "authPermissions": "rw",
+    "unauthPermissions": "r"
+}

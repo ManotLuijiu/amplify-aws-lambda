@@ -1,0 +1,11 @@
+{
+    "appName": "mbapp",
+    "roleName": "pinpointLambdaRolecb01bf39",
+    "cloudWatchPolicyName": "cloudWatchPolicycb01bf39",
+    "pinpointPolicyName": "pinpointPolicycb01bf39",
+    "authPolicyName": "pinpoint_amplify_cb01bf39",
+    "unauthPolicyName": "pinpoint_amplify_cb01bf39",
+    "authRoleName": "mbapp-20180923131910-authRole",
+    "unauthRoleName": "mbapp-20180923131910-unauthRole",
+    "IAMPrefix": "340545016932"
+}
