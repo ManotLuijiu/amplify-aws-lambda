@@ -19,3 +19,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# amplify
+/amplify
+
+# aws-exports
+/src/aws-exports.*
+
+# amplifyrc
+.amplifyrc
+
+# graphqlconfig
+.graphqlconfig.*
