@@ -1,5 +1,0 @@
-{
-    "tableName": "dynamombapprestapi",
-    "partitionKeyName": "id",
-    "partitionKeyType": "S"
-}
